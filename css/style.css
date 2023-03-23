@@ -1,0 +1,63 @@
+
+:root {
+  
+  --color-primary: hsl(25, 97%, 53%); /*Orange*/
+  --color-neutral-White: hsl(0, 0%, 100%);
+  --color-neutral-Light: hsl(217, 12%, 63%); /* Light Grey */
+  --color-neutral-Medium: hsl(216, 12%, 54%); /* Medium Grey */
+  --color-neutral-Dark: hsl(213, 19%, 18%); /* Dark blue */
+  --color-neutral-Very: hsl(216, 12%, 8%); /* Very Dark blue*/
+  --p-font-size: 15px;
+}
+
+
+body {
+  font-size: 1em;
+  
+  margin: auto;
+  font-family: 'Overpass', sans-serif;
+  background-color: var(--color-neutral-Very);
+  height: 100vh;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+main {
+  background-color: var(--color-neutral-Dark);
+  margin: auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 20rem;
+}
+
+.title {
+  color: var(--color-neutral-White);
+  font-size: 1rem;
+}
+
+.content {
+  color: var(--color-neutral-Light);
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.btn {
+background-color: var(--color-primary);
+width: 100%;
+text-transform: uppercase;
+font-weight: 700;
+
+}
+
+
+
+

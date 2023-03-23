@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+  --mobile-width: 375px;
+  --color-primary: hsl(25, 97%, 53%); /*Orange*/
+  --color-neutral-White: hsl(0, 0%, 100%);
+  --color-neutral-Light: hsl(217, 12%, 63%); /* Light Grey */
+  --color-neutral-Medium: hsl(216, 12%, 54%); /* Medium Grey */
+  --color-neutral-Dark: hsl(213, 19%, 18%); /* Dark blue */
+  --color-neutral-Very: hsl(216, 12%, 8%); /* Very Dark blue*/
+  --p-font-size: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  font-size: 1em;
+  background-color: var(--color-neutral-Very);
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border-style: none;
+}
+
+input,
+button {
+  border-style: none;
+}
+
+.card h1 {
+  color: var(--color-neutral-White);
+}
+
+p.content {
+  font-size: var(--p-font-size);
+  font-style: var(--color-neutral-Light);
+}
+
+.body {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+
+}
+
+.card {
+  width: var(--mobile-width);
+  padding: 1.5rem;
+  background-color: var(--color-neutral-Dark);
+  border-radius: 5%;
+}
+
+.rating-state::before {
+  content: 'Rating state';
+  display: inline-block;
+  width: 2.5em;
+  height: 2.5em;
+  text-indent: -9999em; /* para que el content salga de la pantalla y no se vea*/
+  background: rgba(255,255,255, .1) url(/images/icon-star.svg) no-repeat center;
+  border-radius: 50%;
+
+}
+
+.thank-you-state {
+  text-align: center;
+}
+
+
+.btn-group label {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  border-radius: 50%;
+  background-color: rgba(255,255,255, .1);
+  color: var(--color-neutral-Light);
+  text-align: center;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+}
+
+.btn-group label input[type=radio] {
+  display: none;
+  }
+
+.btn-group label:hover {
+  background-color: var(--color-primary);
+}
+
+  .btn {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 0.7rem 0;
+    text-transform: uppercase;
+    background-color: var(--color-primary);
+    font-weight: 700;
+    color: var(--color-neutral-White);
+    border-radius: 2rem;
+    border: none;
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+  }
+  
+.none {
+  display: none;
+}
+
+
